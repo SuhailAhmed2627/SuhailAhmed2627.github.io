@@ -1,0 +1,592 @@
+html
+{
+  scroll-behavior: smooth;;
+}
+
+@font-face
+{
+  font-family: Avenir_Next;
+  src: url(AvenirNext-UltraLight.ttf);
+}
+
+@font-face
+{
+  font-family: ave_reg;
+  src: url(AvenirNextLTPro-Regular.otf);
+}
+
+@font-face
+{
+  font-family: cond;
+  src: url(Intro_Cond_Light_Free.otf);
+}
+
+@font-face
+{
+  font-family: Product_Sans_Bold;
+  src: url(Product_Sans_Bold.ttf);
+}
+
+@font-face
+{
+  font-family: consolas;
+  src: url(Consolas.ttf);
+}
+
+@font-face
+{
+  font-family: mont_thin;
+  src: url(Montserrat-Thin.ttf);
+}
+
+@font-face
+{
+  font-family: mont;
+  src: url(Montserrat-Medium.ttf);
+}
+
+body
+{
+  display: block;
+  place-items: center;
+  margin-top: 0;
+  margin: 0;
+  background: black;
+  font-family: Avenir_Next;
+}
+
+.navbar
+{
+  background-image: linear-gradient(to left, #105a6d, 10%, #020A10);
+  font-family: Avenir_Next;
+  font-size: 2vh;
+}
+
+.navbar-nav > a
+{
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover
+{
+  transform: scale(1.15);
+  font-weight: bold;
+}
+
+.home
+{
+  background-color: #ccc;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 94.6vh;
+  background-image: url(../Images/Tony_Endgame.png);
+  color: white;
+}
+
+.intro
+{
+  font-size: 10vh;
+  padding-top: 35vh;
+  font-family: Avenir_Next;
+}
+
+.name
+{
+  font-family: Product_Sans_Bold;
+}
+
+.home p
+{
+  letter-spacing: 0.9vh;
+  font-size: 2.5vh;
+  text-align: center;
+  font-family: cond;
+  transition: transform 0.5s;
+  
+}
+
+.home p:hover
+{
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+.name:hover
+{
+  background: linear-gradient(-45deg, #57ee52, #dae764, #23a6d5, #bf45dd, #57ee52);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate_text 10s linear infinite ;
+}
+
+.aboutme
+{
+  color: white;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../Images/bg_aboutme.jpg); 
+	animation: gradient 15s ease infinite;
+}
+
+.aboutme h1
+{
+  padding-left: 2vw;
+  padding-top: 10vh;
+  font-family: cond;
+  font-size: 7vh;
+  letter-spacing: 2.2vw;
+}
+
+.aboutme p
+{
+  font-family: ave_reg; 
+  padding-top: 5rem;
+  text-align: left;
+  font-size: 1.25rem;
+  padding-bottom: 6.75rem;
+}
+
+.lighterabout
+{
+  font-family: Avenir_Next;
+  padding-left: 1vw;
+}
+.profile_pic
+{
+  padding-top: 3vh;
+  text-align: center;
+}
+
+.profile_pic img
+{
+
+  height: 40vh;
+  padding:1px;
+  border:1px solid #021a40;
+}
+
+.education
+{
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #0f0038 0%, #000000 74%);
+  color: white;
+  height: 80.6vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.education h1
+{
+  width: 100%;
+  text-align: center;
+  padding-top: 10vh;
+  font-family: mont_thin;
+  font-size: 7vmin;
+  letter-spacing: 2.2vw;
+}
+
+.heading_edu
+{
+  padding-left: 2vw;
+  font-family: mont;
+}
+
+.edu_details
+{
+  padding-top: 5vh;
+}
+
+.place
+{
+  font-family: mont_thin;
+  font-size: 1.25vmax;
+  width: 45%;
+  text-align:right;
+  display: inline-block;
+}
+
+.details
+{
+  font-family: mont_thin;
+  font-size: 1.25vmax;
+  padding-left: 10vw;
+  width: 40%;
+  text-align: left;
+  display: inline-block;
+}
+
+.skills
+{
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #0f0038 74%);
+}
+
+.skillsets
+{
+  padding-top: 100px;
+}
+
+.skill_heading
+{
+  font-size: 10vmax;
+  font-family: consolas;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+.skill_heading h1
+{
+  font-size: 4vmax;
+  letter-spacing: 1.2vw;
+}
+
+.skill_heading:after
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #db0000;
+  border-radius: 2px;
+}
+
+.boxes
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.skill_box
+{
+  padding: 1rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.skill_box:hover > .skill_title:after, .skill_box:hover > .skill_title:before
+{
+  width: 35px;
+}
+
+.skill_box:hover .logos
+{
+  transform: translateY(-10px);
+}
+
+.skill_title
+{
+  font-family: Product_Sans_Bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.skill_title:after
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: #db0000;
+  transition: 0.5s;
+}
+
+.skill_title:before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  background-color: #db0000;
+  transition: 0.5s;
+}
+
+.logos
+{
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.logos:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 90px;
+  background: rgba(100,100,100,0.5);
+  border-radius: 45px 0 0 45px;
+}
+
+.skill_box p
+{
+  font-family: ave_reg;
+}
+
+
+.skill_title h3
+{
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.skill_icon
+{
+  width:50px;
+  z-index: 2;
+}
+
+.connect
+{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #112131 74%);
+  color: white;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 93.5vh;
+}
+
+.message
+{
+  font-family: ave_reg;
+  font-size: 5vmax;
+  letter-spacing: 1vmax;
+  text-align: center;
+  padding-top: 7.5vw;
+  padding-bottom: 40px;
+  
+}
+
+.message:hover
+{
+  background: linear-gradient(-45deg, #57ee52, #dae764, #23a6d5, #bf45dd, #57ee52);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate_text 10s linear infinite;
+}
+
+.message_for_you
+{
+  padding-top: 10px;
+  font-family: ave_reg;
+  font-size: 20px;
+}
+
+.contact
+{
+  padding-top: 75px;
+}
+
+.social_boxes
+{
+  margin-left: 20%;
+  margin-right: 20%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social_box
+{
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.social_icons
+{
+  border-radius: 5px;
+  width: 5vmax;
+  height: 5vmax;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.social_icons:hover
+{
+  background: whitesmoke;
+}
+
+
+
+@keyframes animate_text
+{
+  100%
+  {
+    background-position: 400%;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width:990px)
+{
+  .boxes
+  {
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem 50px;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+
+  .navbar-nav > a
+  {
+    text-align: center;
+  }
+  .navbar-nav > a
+  {
+    width: max-content;
+    transform: none;
+  }
+
+  .name
+  {
+    background: linear-gradient(-45deg, #57ee52, #dae764, #23a6d5, #bf45dd, #57ee52);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate_text 10s linear infinite;
+  }
+
+  .profile_pic img
+  {
+    height: 30vh;
+    padding:1px;
+    border:1px solid #021a40;
+  }
+
+  .intro
+  {
+    font-size: 10vw;
+  }
+
+  .aboutme p
+  {
+    font-size: 3vw;
+  }
+
+  .home p
+  {
+    font-size: 2vw;
+  }
+
+  .place
+  {
+    font-size: 1.75vmax;
+  }
+
+  .details
+  {
+    font-size: 1.5vmax;
+  }
+
+  .boxes
+  {
+    grid-template-columns: 1fr;
+  }
+
+  .message
+  {
+    font-size: 4vmax;
+    letter-spacing: 1vmax;
+    text-align: center;
+    padding-top: 7.5vw;
+    background: linear-gradient(-45deg, #57ee52, #dae764, #23a6d5, #bf45dd, #57ee52);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate_text 10s linear infinite;
+  }
+
+  .social_icons
+  {
+    height: 5px;
+    width: 5px;
+    background: none;
+  }
+
+  .social_box:hover
+  {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .social_icons:hover
+  {
+    background: none;
+  }
+  
+  .connect
+  {
+    height: 54.5vmax;
+  }
+
+  .home
+  {
+    background-attachment: none;
+  }
+}
